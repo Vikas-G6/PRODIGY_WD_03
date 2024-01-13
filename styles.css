@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    background: url(BG.jpg) center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffddff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #8bfaf8;
+  }
+  
+  .result {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #9effc2;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8bfaf8;
+  }
+  button:hover{
+    background-color:aqua;
+  }
+  /* Define a keyframe for the glow effect */
+/* Define a keyframe for the glow effect */
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+      color: #8bfaf8;
+    }
+    50% {
+      box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+      color:#ff00ff;
+    }
+    100% {
+      box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+      color: #f3fa8b;
+    }
+  }
+  
+  /* Apply the animation to the heading */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    animation: glow 2s infinite;
+  }
+  
